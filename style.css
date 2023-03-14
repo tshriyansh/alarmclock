@@ -54,7 +54,6 @@ body {
 /* Time text */
 .wrapper h1 {
   font-size: 3rem;
-
   font-weight: bold;
   margin: 2.5rem 0;
 }
@@ -135,7 +134,6 @@ body {
   );
   z-index: 10;
   flex-direction: column;
-  /* display: none; */
 }
 
 .d-none {
@@ -146,9 +144,21 @@ body {
 @media screen and (max-width: 500px) {
   .wrapper {
     width: 95vw;
+    border-radius: 10px;
   }
-
+  #currentTime{
+    font-size: 2rem;
+  }
+  #clock-img{
+    height: 5rem;
+  }
   .welcomeBack {
     font-size: 0.5rem;
+  }
+  .content .column select {
+    height: 3rem;
+  }
+  .content .column{
+    border: none;
   }
 }
